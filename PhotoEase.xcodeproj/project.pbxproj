@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		543EF8D82CF4662500069F25 /* PhotoEaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8D72CF4662500069F25 /* PhotoEaseApp.swift */; };
+		543EF8DA2CF4662500069F25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8D92CF4662500069F25 /* ContentView.swift */; };
+		543EF8DC2CF4662600069F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543EF8DB2CF4662600069F25 /* Assets.xcassets */; };
+		543EF8DF2CF4662600069F25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543EF8DE2CF4662600069F25 /* Preview Assets.xcassets */; };
+		543EF8E92CF4662600069F25 /* PhotoEaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8E82CF4662600069F25 /* PhotoEaseTests.swift */; };
+		543EF8F32CF4662600069F25 /* PhotoEaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8F22CF4662600069F25 /* PhotoEaseUITests.swift */; };
+		543EF8F52CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8F42CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		543EF8E52CF4662600069F25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 543EF8CC2CF4662500069F25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 543EF8D32CF4662500069F25;
+			remoteInfo = PhotoEase;
+		};
+		543EF8EF2CF4662600069F25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 543EF8CC2CF4662500069F25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 543EF8D32CF4662500069F25;
+			remoteInfo = PhotoEase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		543EF8D42CF4662500069F25 /* PhotoEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		543EF8D72CF4662500069F25 /* PhotoEaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEaseApp.swift; sourceTree = "<group>"; };
+		543EF8D92CF4662500069F25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		543EF8DB2CF4662600069F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		543EF8DE2CF4662600069F25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		543EF8E42CF4662600069F25 /* PhotoEaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoEaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		543EF8E82CF4662600069F25 /* PhotoEaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEaseTests.swift; sourceTree = "<group>"; };
+		543EF8EE2CF4662600069F25 /* PhotoEaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoEaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		543EF8F22CF4662600069F25 /* PhotoEaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEaseUITests.swift; sourceTree = "<group>"; };
+		543EF8F42CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		543EF8D12CF4662500069F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543EF8E12CF4662600069F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543EF8EB2CF4662600069F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		543EF8CB2CF4662500069F25 = {
+			isa = PBXGroup;
+			children = (
+				543EF8D62CF4662500069F25 /* PhotoEase */,
+				543EF8E72CF4662600069F25 /* PhotoEaseTests */,
+				543EF8F12CF4662600069F25 /* PhotoEaseUITests */,
+				543EF8D52CF4662500069F25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		543EF8D52CF4662500069F25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				543EF8D42CF4662500069F25 /* PhotoEase.app */,
+				543EF8E42CF4662600069F25 /* PhotoEaseTests.xctest */,
+				543EF8EE2CF4662600069F25 /* PhotoEaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		543EF8D62CF4662500069F25 /* PhotoEase */ = {
+			isa = PBXGroup;
+			children = (
+				543EF8D72CF4662500069F25 /* PhotoEaseApp.swift */,
+				543EF8D92CF4662500069F25 /* ContentView.swift */,
+				543EF8DB2CF4662600069F25 /* Assets.xcassets */,
+				543EF8DD2CF4662600069F25 /* Preview Content */,
+			);
+			path = PhotoEase;
+			sourceTree = "<group>";
+		};
+		543EF8DD2CF4662600069F25 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				543EF8DE2CF4662600069F25 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		543EF8E72CF4662600069F25 /* PhotoEaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				543EF8E82CF4662600069F25 /* PhotoEaseTests.swift */,
+			);
+			path = PhotoEaseTests;
+			sourceTree = "<group>";
+		};
+		543EF8F12CF4662600069F25 /* PhotoEaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				543EF8F22CF4662600069F25 /* PhotoEaseUITests.swift */,
+				543EF8F42CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift */,
+			);
+			path = PhotoEaseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		543EF8D32CF4662500069F25 /* PhotoEase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 543EF8F82CF4662600069F25 /* Build configuration list for PBXNativeTarget "PhotoEase" */;
+			buildPhases = (
+				543EF8D02CF4662500069F25 /* Sources */,
+				543EF8D12CF4662500069F25 /* Frameworks */,
+				543EF8D22CF4662500069F25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoEase;
+			productName = PhotoEase;
+			productReference = 543EF8D42CF4662500069F25 /* PhotoEase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		543EF8E32CF4662600069F25 /* PhotoEaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 543EF8FB2CF4662600069F25 /* Build configuration list for PBXNativeTarget "PhotoEaseTests" */;
+			buildPhases = (
+				543EF8E02CF4662600069F25 /* Sources */,
+				543EF8E12CF4662600069F25 /* Frameworks */,
+				543EF8E22CF4662600069F25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				543EF8E62CF4662600069F25 /* PBXTargetDependency */,
+			);
+			name = PhotoEaseTests;
+			productName = PhotoEaseTests;
+			productReference = 543EF8E42CF4662600069F25 /* PhotoEaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		543EF8ED2CF4662600069F25 /* PhotoEaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 543EF8FE2CF4662600069F25 /* Build configuration list for PBXNativeTarget "PhotoEaseUITests" */;
+			buildPhases = (
+				543EF8EA2CF4662600069F25 /* Sources */,
+				543EF8EB2CF4662600069F25 /* Frameworks */,
+				543EF8EC2CF4662600069F25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				543EF8F02CF4662600069F25 /* PBXTargetDependency */,
+			);
+			name = PhotoEaseUITests;
+			productName = PhotoEaseUITests;
+			productReference = 543EF8EE2CF4662600069F25 /* PhotoEaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		543EF8CC2CF4662500069F25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					543EF8D32CF4662500069F25 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					543EF8E32CF4662600069F25 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 543EF8D32CF4662500069F25;
+					};
+					543EF8ED2CF4662600069F25 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 543EF8D32CF4662500069F25;
+					};
+				};
+			};
+			buildConfigurationList = 543EF8CF2CF4662500069F25 /* Build configuration list for PBXProject "PhotoEase" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 543EF8CB2CF4662500069F25;
+			productRefGroup = 543EF8D52CF4662500069F25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				543EF8D32CF4662500069F25 /* PhotoEase */,
+				543EF8E32CF4662600069F25 /* PhotoEaseTests */,
+				543EF8ED2CF4662600069F25 /* PhotoEaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		543EF8D22CF4662500069F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543EF8DF2CF4662600069F25 /* Preview Assets.xcassets in Resources */,
+				543EF8DC2CF4662600069F25 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543EF8E22CF4662600069F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543EF8EC2CF4662600069F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		543EF8D02CF4662500069F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543EF8DA2CF4662500069F25 /* ContentView.swift in Sources */,
+				543EF8D82CF4662500069F25 /* PhotoEaseApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543EF8E02CF4662600069F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543EF8E92CF4662600069F25 /* PhotoEaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543EF8EA2CF4662600069F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543EF8F32CF4662600069F25 /* PhotoEaseUITests.swift in Sources */,
+				543EF8F52CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		543EF8E62CF4662600069F25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 543EF8D32CF4662500069F25 /* PhotoEase */;
+			targetProxy = 543EF8E52CF4662600069F25 /* PBXContainerItemProxy */;
+		};
+		543EF8F02CF4662600069F25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 543EF8D32CF4662500069F25 /* PhotoEase */;
+			targetProxy = 543EF8EF2CF4662600069F25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		543EF8F62CF4662600069F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		543EF8F72CF4662600069F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		543EF8F92CF4662600069F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PhotoEase/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slasify.PhotoEase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		543EF8FA2CF4662600069F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PhotoEase/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slasify.PhotoEase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		543EF8FC2CF4662600069F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slasify.PhotoEaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoEase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoEase";
+			};
+			name = Debug;
+		};
+		543EF8FD2CF4662600069F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slasify.PhotoEaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoEase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoEase";
+			};
+			name = Release;
+		};
+		543EF8FF2CF4662600069F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slasify.PhotoEaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoEase;
+			};
+			name = Debug;
+		};
+		543EF9002CF4662600069F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slasify.PhotoEaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoEase;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		543EF8CF2CF4662500069F25 /* Build configuration list for PBXProject "PhotoEase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543EF8F62CF4662600069F25 /* Debug */,
+				543EF8F72CF4662600069F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		543EF8F82CF4662600069F25 /* Build configuration list for PBXNativeTarget "PhotoEase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543EF8F92CF4662600069F25 /* Debug */,
+				543EF8FA2CF4662600069F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		543EF8FB2CF4662600069F25 /* Build configuration list for PBXNativeTarget "PhotoEaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543EF8FC2CF4662600069F25 /* Debug */,
+				543EF8FD2CF4662600069F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		543EF8FE2CF4662600069F25 /* Build configuration list for PBXNativeTarget "PhotoEaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543EF8FF2CF4662600069F25 /* Debug */,
+				543EF9002CF4662600069F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 543EF8CC2CF4662500069F25 /* Project object */;
+}
