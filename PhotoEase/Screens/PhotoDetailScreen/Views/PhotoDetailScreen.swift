@@ -9,24 +9,27 @@ import SwiftUI
 
 struct PhotoDetailScreen: View {
     @ObservedObject var viewModel: PhotoViewModel
+    @State private var showAlert = false
     let photo: PhotoModel
     
     var body: some View {
         VStack(spacing: 16) {
-            AsyncImage(url: URL(string: photo.url)) { phase in
-                switch phase {
-                case .empty:
-                    ProgressView().frame(width: 300, height: 300)
-                case .success(let image):
-                    image.resizable().scaledToFit().frame(maxWidth: 300, maxHeight: 300)
-                case .failure(_):
-                    Image(systemName: "photo").resizable().scaledToFit().frame(width: 300, height: 300)
-                @unknown default:
-                    EmptyView()
-                }
+            HStack {
+                Text("Photo Detail")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .frame(maxWidth: .infinity, alignment: .leading)
             }
             
-            Text(photo.title)
+            Spacer()
+            PhotoAsyncImage(
+                imageUrl: photo.url,
+                width: 300,
+                height: 300,
+                cornerRadius: 0
+            )
+            Spacer()
+            Text("Title: \(photo.title)")
                 .font(.headline)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
@@ -34,15 +37,35 @@ struct PhotoDetailScreen: View {
             Spacer()
         }
         .padding()
-        .navigationTitle("Photo Detail")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
-            Button(action: {
+            trailingNavItems()
+        }
+        .alert("Are you sure to dislike this photo?", isPresented: $showAlert) {
+            Button("Cancel", role: .cancel) { }
+            
+            Button("Sure", role: .destructive) {
                 viewModel.toggleFavorite(for: photo)
-            }) {
-                Image(systemName: viewModel.isFavorite(photo) ? "star.fill" : "star")
-                    .foregroundColor(viewModel.isFavorite(photo) ? .yellow : .gray)
             }
         }
+    }
+}
+
+
+extension PhotoDetailScreen {
+    private func trailingNavItems()-> some ToolbarContent {
+        ToolbarItemGroup(placement: .topBarTrailing) {
+            Button(action: {
+                if viewModel.isFavorite(photo) {
+                    showAlert = true
+                } else {
+                    viewModel.toggleFavorite(for: photo)
+                }
+            }) {
+                Image(systemName: viewModel.isFavorite(photo) ? "star.fill" : "star")
+                    .foregroundColor(viewModel.isFavorite(photo) ? .blue : .gray)
+            }
+        }
+        
     }
 }

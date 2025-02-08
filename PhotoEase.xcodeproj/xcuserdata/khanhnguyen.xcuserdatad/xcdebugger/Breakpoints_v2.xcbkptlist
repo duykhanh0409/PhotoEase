@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "49710E8A-5BD4-4A89-92C7-0B6F682B5F5A"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoEase/Utils/NetworkManager.swift"
@@ -18,43 +18,13 @@
             endingLineNumber = "40"
             landmarkName = "fetchData(from:method:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "49710E8A-5BD4-4A89-92C7-0B6F682B5F5A - 70a46ad96021319a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static PhotoEase.NetworkingManager.fetchData(from: Swift.String, method: Swift.String) -&gt; Combine.AnyPublisher&lt;Foundation.Data, Swift.Error&gt;"
-                  moduleName = "PhotoEase.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/khanhnguyen/Documents/personal_project/SwiftUI/recruitment-dev-iOS-photos-homework-DuyKhanh/PhotoEase/Utils/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40">
-               </Location>
-               <Location
-                  uuid = "49710E8A-5BD4-4A89-92C7-0B6F682B5F5A - 5a6658850d6cbbf3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; Foundation.Data in static PhotoEase.NetworkingManager.fetchData(from: Swift.String, method: Swift.String) -&gt; Combine.AnyPublisher&lt;Foundation.Data, Swift.Error&gt;"
-                  moduleName = "PhotoEase.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/khanhnguyen/Documents/personal_project/SwiftUI/recruitment-dev-iOS-photos-homework-DuyKhanh/PhotoEase/Utils/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E8047BFD-3382-4E59-88B8-EBFF5E6EE301"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoEase/Utils/NetworkManager.swift"
@@ -64,36 +34,6 @@
             endingLineNumber = "42"
             landmarkName = "fetchData(from:method:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E8047BFD-3382-4E59-88B8-EBFF5E6EE301 - 5a6658850d6cbbbd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; Foundation.Data in static PhotoEase.NetworkingManager.fetchData(from: Swift.String, method: Swift.String) -&gt; Combine.AnyPublisher&lt;Foundation.Data, Swift.Error&gt;"
-                  moduleName = "PhotoEase.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/khanhnguyen/Documents/personal_project/SwiftUI/recruitment-dev-iOS-photos-homework-DuyKhanh/PhotoEase/Utils/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42">
-               </Location>
-               <Location
-                  uuid = "E8047BFD-3382-4E59-88B8-EBFF5E6EE301 - 5a6658850d6cbbbd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; Foundation.Data in static PhotoEase.NetworkingManager.fetchData(from: Swift.String, method: Swift.String) -&gt; Combine.AnyPublisher&lt;Foundation.Data, Swift.Error&gt;"
-                  moduleName = "PhotoEase.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/khanhnguyen/Documents/personal_project/SwiftUI/recruitment-dev-iOS-photos-homework-DuyKhanh/PhotoEase/Utils/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -116,7 +56,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "630C957A-0054-4FBB-AEFE-9155546F35E8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoEase/Utils/NetworkManager.swift"
@@ -126,36 +66,38 @@
             endingLineNumber = "44"
             landmarkName = "fetchData(from:method:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "630C957A-0054-4FBB-AEFE-9155546F35E8 - 5a6658850d6cba7f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; Foundation.Data in static PhotoEase.NetworkingManager.fetchData(from: Swift.String, method: Swift.String) -&gt; Combine.AnyPublisher&lt;Foundation.Data, Swift.Error&gt;"
-                  moduleName = "PhotoEase.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/khanhnguyen/Documents/personal_project/SwiftUI/recruitment-dev-iOS-photos-homework-DuyKhanh/PhotoEase/Utils/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44">
-               </Location>
-               <Location
-                  uuid = "630C957A-0054-4FBB-AEFE-9155546F35E8 - 5a6658850d6cba7f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; Foundation.Data in static PhotoEase.NetworkingManager.fetchData(from: Swift.String, method: Swift.String) -&gt; Combine.AnyPublisher&lt;Foundation.Data, Swift.Error&gt;"
-                  moduleName = "PhotoEase.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/khanhnguyen/Documents/personal_project/SwiftUI/recruitment-dev-iOS-photos-homework-DuyKhanh/PhotoEase/Utils/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B3D86580-6D1B-4714-9DFC-10F7DB5575B4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoEase/Screens/PhotoHomeScreen/ViewModels/PhotoHomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "fetchPhotos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06A7936F-9C9F-4A57-BE73-B8A9864CA6CF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoEase/Screens/PhotoHomeScreen/ViewModels/PhotoHomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "addSubscribers()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

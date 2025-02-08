@@ -14,6 +14,7 @@
 		543EF8E92CF4662600069F25 /* PhotoEaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8E82CF4662600069F25 /* PhotoEaseTests.swift */; };
 		543EF8F32CF4662600069F25 /* PhotoEaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8F22CF4662600069F25 /* PhotoEaseUITests.swift */; };
 		543EF8F52CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8F42CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift */; };
+		8B43C47E2D57A70A00365326 /* PhotoAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43C47D2D57A70A00365326 /* PhotoAsyncImage.swift */; };
 		8B948AF02D573296000BE0FD /* DomainsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B948AEF2D573296000BE0FD /* DomainsConstants.swift */; };
 		8B948AF22D5732D4000BE0FD /* PhotoHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B948AF12D5732CE000BE0FD /* PhotoHomeScreen.swift */; };
 		8B948AF62D573566000BE0FD /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B948AF52D573560000BE0FD /* PhotoService.swift */; };
@@ -51,6 +52,7 @@
 		543EF8EE2CF4662600069F25 /* PhotoEaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoEaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		543EF8F22CF4662600069F25 /* PhotoEaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEaseUITests.swift; sourceTree = "<group>"; };
 		543EF8F42CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8B43C47D2D57A70A00365326 /* PhotoAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAsyncImage.swift; sourceTree = "<group>"; };
 		8B948AEF2D573296000BE0FD /* DomainsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainsConstants.swift; sourceTree = "<group>"; };
 		8B948AF12D5732CE000BE0FD /* PhotoHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoHomeScreen.swift; sourceTree = "<group>"; };
 		8B948AF52D573560000BE0FD /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		543EF8D62CF4662500069F25 /* PhotoEase */ = {
 			isa = PBXGroup;
 			children = (
+				8B43C47C2D57A6E900365326 /* Components */,
 				8B948AE62D57321A000BE0FD /* Services */,
 				8B948AE52D573200000BE0FD /* Utils */,
 				8B948AE42D5731F5000BE0FD /* Screens */,
@@ -142,6 +145,14 @@
 				543EF8F42CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift */,
 			);
 			path = PhotoEaseUITests;
+			sourceTree = "<group>";
+		};
+		8B43C47C2D57A6E900365326 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8B43C47D2D57A70A00365326 /* PhotoAsyncImage.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		8B948AE42D5731F5000BE0FD /* Screens */ = {
@@ -359,6 +370,7 @@
 				8B948AFC2D5735FC000BE0FD /* PhotoModel.swift in Sources */,
 				8B948AFE2D57361B000BE0FD /* PhotoHomeViewModel.swift in Sources */,
 				8B948AF22D5732D4000BE0FD /* PhotoHomeScreen.swift in Sources */,
+				8B43C47E2D57A70A00365326 /* PhotoAsyncImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
