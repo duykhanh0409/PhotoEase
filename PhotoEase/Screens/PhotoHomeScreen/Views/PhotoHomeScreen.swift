@@ -7,55 +7,57 @@
 
 import SwiftUI
 
-struct Photo: Identifiable {
-    let id: Int
-    let title: String
-    let thumbnailUrl: String
-}
-
 struct PhotoHomeScreen: View {
+    
     @StateObject private var viewModel = PhotoViewModel()
-    @State private var searchText = ""
-
-
+    
     var body: some View {
         NavigationStack {
-            List(viewModel.photos) { photo in
+            List(viewModel.filteredPhotos) { photo in
+                NavigationLink(destination: PhotoDetailScreen(viewModel: viewModel, photo: photo)) {
                     HStack {
-                        AsyncImage(url: URL(string: photo.thumbnailUrl)) { image in
-                            image
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 50, height: 50)
-                                .clipShape(Circle())
-                        } placeholder: {
-                            ProgressView()
+                        AsyncImage(url: URL(string: photo.thumbnailUrl)) { phase in
+                            switch phase {
+                            case .empty:
+                                ProgressView().frame(width: 50, height: 50)
+                            case .success(let image):
+                                image.resizable()
+                                    .scaledToFill()
+                                    .frame(width: 50, height: 50)
+                                    .clipShape(Circle())
+                            case .failure(_):
+                                Image(systemName: "photo").resizable().scaledToFit()
+                                    .frame(width: 50, height: 50)
+                                    .clipShape(Circle())
+                            @unknown default:
+                                EmptyView()
+                            }
                         }
-
+                        
                         Text(photo.title)
                             .font(.body)
                             .lineLimit(1)
-                            .padding(.leading, 8)
                         
                         Spacer()
                         
-                        Image(systemName: "star")
-                            .foregroundColor(.gray)
+                        Button(action: {
+                            viewModel.toggleFavorite(for: photo)
+                        }) {
+                            Image(systemName: viewModel.isFavorite(photo) ? "star.fill" : "star")
+                                .foregroundColor(viewModel.isFavorite(photo) ? .yellow : .gray)
+                        }
+                        .buttonStyle(BorderlessButtonStyle())
                     }
-                    .padding(.vertical, 8)
-            
+                }
             }
             .navigationTitle("Photo List")
-            .searchable(text: $searchText, prompt: "Search Photos")
+            .searchable(text: $viewModel.searchText, prompt: "Search Photos")
             .onAppear { viewModel.fetchPhotos() }
         }
     }
 }
 
 
-
-struct PhotoListView_Previews: PreviewProvider {
-    static var previews: some View {
-        PhotoHomeScreen()
-    }
+#Preview {
+    PhotoHomeScreen()
 }

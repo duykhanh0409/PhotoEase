@@ -18,20 +18,8 @@ class PhotoService {
         
         photosSubscription = NetworkingManager.fetchData(from: url)
             .decode(type: [PhotoModel].self, decoder: JSONDecoder())
-            .map { photos in
-
-                return photos.map { photo in
-                    PhotoModel(
-                        albumId: photo.albumId,
-                        id: photo.id,
-                        title: photo.title,
-                        url: photo.url.replacingOccurrences(of: "via.placeholder.com", with: "dummyimage.com"),
-                        thumbnailUrl: photo.thumbnailUrl.replacingOccurrences(of: "via.placeholder.com", with: "dummyimage.com")
-                    )
-                }
-            }
-            .sink(receiveCompletion: NetworkingManager.handleCompletion, receiveValue: { [weak self] modifiedPhotos in
-                self?.photos = modifiedPhotos
+            .sink(receiveCompletion: NetworkingManager.handleCompletion, receiveValue: { [weak self] dataResponse in
+                self?.photos = dataResponse
                 self?.photosSubscription?.cancel()
             })
     }
