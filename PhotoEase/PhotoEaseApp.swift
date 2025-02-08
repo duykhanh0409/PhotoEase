@@ -4,7 +4,7 @@ import SwiftUI
 struct PhotoEaseApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PhotoHomeScreen()
         }
     }
 }

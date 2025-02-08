@@ -14,6 +14,13 @@
 		543EF8E92CF4662600069F25 /* PhotoEaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8E82CF4662600069F25 /* PhotoEaseTests.swift */; };
 		543EF8F32CF4662600069F25 /* PhotoEaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8F22CF4662600069F25 /* PhotoEaseUITests.swift */; };
 		543EF8F52CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8F42CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift */; };
+		8B948AF02D573296000BE0FD /* DomainsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B948AEF2D573296000BE0FD /* DomainsConstants.swift */; };
+		8B948AF22D5732D4000BE0FD /* PhotoHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B948AF12D5732CE000BE0FD /* PhotoHomeScreen.swift */; };
+		8B948AF62D573566000BE0FD /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B948AF52D573560000BE0FD /* PhotoService.swift */; };
+		8B948AF82D5735DB000BE0FD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B948AF72D5735DB000BE0FD /* NetworkManager.swift */; };
+		8B948AFA2D5735EB000BE0FD /* PhotoDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B948AF92D5735EB000BE0FD /* PhotoDetailScreen.swift */; };
+		8B948AFC2D5735FC000BE0FD /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B948AFB2D5735FC000BE0FD /* PhotoModel.swift */; };
+		8B948AFE2D57361B000BE0FD /* PhotoHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B948AFD2D57360C000BE0FD /* PhotoHomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		543EF8EE2CF4662600069F25 /* PhotoEaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoEaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		543EF8F22CF4662600069F25 /* PhotoEaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEaseUITests.swift; sourceTree = "<group>"; };
 		543EF8F42CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8B948AEF2D573296000BE0FD /* DomainsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainsConstants.swift; sourceTree = "<group>"; };
+		8B948AF12D5732CE000BE0FD /* PhotoHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoHomeScreen.swift; sourceTree = "<group>"; };
+		8B948AF52D573560000BE0FD /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
+		8B948AF72D5735DB000BE0FD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8B948AF92D5735EB000BE0FD /* PhotoDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailScreen.swift; sourceTree = "<group>"; };
+		8B948AFB2D5735FC000BE0FD /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		8B948AFD2D57360C000BE0FD /* PhotoHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoHomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,9 @@
 		543EF8D62CF4662500069F25 /* PhotoEase */ = {
 			isa = PBXGroup;
 			children = (
+				8B948AE62D57321A000BE0FD /* Services */,
+				8B948AE52D573200000BE0FD /* Utils */,
+				8B948AE42D5731F5000BE0FD /* Screens */,
 				543EF8D72CF4662500069F25 /* PhotoEaseApp.swift */,
 				543EF8D92CF4662500069F25 /* ContentView.swift */,
 				543EF8DB2CF4662600069F25 /* Assets.xcassets */,
@@ -125,6 +142,82 @@
 				543EF8F42CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift */,
 			);
 			path = PhotoEaseUITests;
+			sourceTree = "<group>";
+		};
+		8B948AE42D5731F5000BE0FD /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8B948AEA2D573259000BE0FD /* PhotoDetailScreen */,
+				8B948AE82D573231000BE0FD /* PhotoHomeScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8B948AE52D573200000BE0FD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8B948AEF2D573296000BE0FD /* DomainsConstants.swift */,
+				8B948AF72D5735DB000BE0FD /* NetworkManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8B948AE62D57321A000BE0FD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8B948AF52D573560000BE0FD /* PhotoService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8B948AE82D573231000BE0FD /* PhotoHomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8B948AF42D573407000BE0FD /* Models */,
+				8B948AF32D5733FF000BE0FD /* ViewModels */,
+				8B948AEB2D573268000BE0FD /* Views */,
+			);
+			path = PhotoHomeScreen;
+			sourceTree = "<group>";
+		};
+		8B948AEA2D573259000BE0FD /* PhotoDetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8B948AEC2D573275000BE0FD /* Views */,
+			);
+			path = PhotoDetailScreen;
+			sourceTree = "<group>";
+		};
+		8B948AEB2D573268000BE0FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B948AF12D5732CE000BE0FD /* PhotoHomeScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B948AEC2D573275000BE0FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B948AF92D5735EB000BE0FD /* PhotoDetailScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B948AF32D5733FF000BE0FD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8B948AFD2D57360C000BE0FD /* PhotoHomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8B948AF42D573407000BE0FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B948AFB2D5735FC000BE0FD /* PhotoModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +350,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B948AF82D5735DB000BE0FD /* NetworkManager.swift in Sources */,
+				8B948AF62D573566000BE0FD /* PhotoService.swift in Sources */,
 				543EF8DA2CF4662500069F25 /* ContentView.swift in Sources */,
 				543EF8D82CF4662500069F25 /* PhotoEaseApp.swift in Sources */,
+				8B948AF02D573296000BE0FD /* DomainsConstants.swift in Sources */,
+				8B948AFA2D5735EB000BE0FD /* PhotoDetailScreen.swift in Sources */,
+				8B948AFC2D5735FC000BE0FD /* PhotoModel.swift in Sources */,
+				8B948AFE2D57361B000BE0FD /* PhotoHomeViewModel.swift in Sources */,
+				8B948AF22D5732D4000BE0FD /* PhotoHomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
