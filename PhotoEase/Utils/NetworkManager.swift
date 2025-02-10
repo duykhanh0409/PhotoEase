@@ -10,7 +10,7 @@ import Combine
 
 class NetworkingManager {
     
-    enum NetworkingError: LocalizedError {
+    enum NetworkingError: Equatable, LocalizedError {
         case invalidURL
         case badResponse(statusCode: Int)
         case unknown
@@ -49,12 +49,12 @@ class NetworkingManager {
             .eraseToAnyPublisher()
     }
     
-    static func handleCompletion(_ completion: Subscribers.Completion<Error>) {
+    static func handleCompletion(_ completion: Subscribers.Completion<Error>) -> String? {
         switch completion {
         case .finished:
-            break
+            return nil
         case .failure(let error):
-            print("Network error: \(error.localizedDescription)")
+            return (error as? NetworkingError)?.localizedDescription ?? "An unknown error occurred."
         }
     }
 }

@@ -38,6 +38,16 @@ struct PhotoHomeScreen: View {
                 leadingNavItems()
                 trailingNavItems()
             }
+            .alert(isPresented: Binding<Bool>(
+                get: { viewModel.errorMessage != nil },
+                set: { _ in viewModel.errorMessage = nil }
+            )) {
+                Alert(
+                    title: Text("Service Error"),
+                    message: Text(viewModel.errorMessage ?? "An unknown error occurred."),
+                    dismissButton: .default(Text("OK"))
+                )
+            }
         }
     }
 }
@@ -47,7 +57,7 @@ extension PhotoHomeScreen {
         ToolbarItem(placement: .topBarLeading) {
             HStack {
                 Button(action: {
-                 
+                    
                 }) {
                     Image(systemName: "chevron.backward")
                         .foregroundColor(.blue)

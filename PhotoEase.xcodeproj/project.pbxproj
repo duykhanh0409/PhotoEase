@@ -11,10 +11,14 @@
 		543EF8DA2CF4662500069F25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8D92CF4662500069F25 /* ContentView.swift */; };
 		543EF8DC2CF4662600069F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543EF8DB2CF4662600069F25 /* Assets.xcassets */; };
 		543EF8DF2CF4662600069F25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543EF8DE2CF4662600069F25 /* Preview Assets.xcassets */; };
-		543EF8E92CF4662600069F25 /* PhotoEaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8E82CF4662600069F25 /* PhotoEaseTests.swift */; };
 		543EF8F32CF4662600069F25 /* PhotoEaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8F22CF4662600069F25 /* PhotoEaseUITests.swift */; };
 		543EF8F52CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8F42CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift */; };
+		8B237E4E2D5888AE00E1B646 /* PhotoHomeViewModels_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B237E4D2D5888AE00E1B646 /* PhotoHomeViewModels_Tests.swift */; };
 		8B43C47E2D57A70A00365326 /* PhotoAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43C47D2D57A70A00365326 /* PhotoAsyncImage.swift */; };
+		8B43C4802D58738200365326 /* PhotoModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43C47F2D58737600365326 /* PhotoModel_Tests.swift */; };
+		8B43C4822D5874DF00365326 /* PhotoService_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43C4812D5874CE00365326 /* PhotoService_Tests.swift */; };
+		8B43C4882D587AA700365326 /* NetworkManager_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43C4872D587AA700365326 /* NetworkManager_Tests.swift */; };
+		8B870A4F2D5880B400B2C5E5 /* MockPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B870A4E2D5880AF00B2C5E5 /* MockPhotoService.swift */; };
 		8B948AF02D573296000BE0FD /* DomainsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B948AEF2D573296000BE0FD /* DomainsConstants.swift */; };
 		8B948AF22D5732D4000BE0FD /* PhotoHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B948AF12D5732CE000BE0FD /* PhotoHomeScreen.swift */; };
 		8B948AF62D573566000BE0FD /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B948AF52D573560000BE0FD /* PhotoService.swift */; };
@@ -48,11 +52,15 @@
 		543EF8DB2CF4662600069F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		543EF8DE2CF4662600069F25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		543EF8E42CF4662600069F25 /* PhotoEaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoEaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		543EF8E82CF4662600069F25 /* PhotoEaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEaseTests.swift; sourceTree = "<group>"; };
 		543EF8EE2CF4662600069F25 /* PhotoEaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoEaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		543EF8F22CF4662600069F25 /* PhotoEaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEaseUITests.swift; sourceTree = "<group>"; };
 		543EF8F42CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8B237E4D2D5888AE00E1B646 /* PhotoHomeViewModels_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoHomeViewModels_Tests.swift; sourceTree = "<group>"; };
 		8B43C47D2D57A70A00365326 /* PhotoAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAsyncImage.swift; sourceTree = "<group>"; };
+		8B43C47F2D58737600365326 /* PhotoModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel_Tests.swift; sourceTree = "<group>"; };
+		8B43C4812D5874CE00365326 /* PhotoService_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService_Tests.swift; sourceTree = "<group>"; };
+		8B43C4872D587AA700365326 /* NetworkManager_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager_Tests.swift; sourceTree = "<group>"; };
+		8B870A4E2D5880AF00B2C5E5 /* MockPhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPhotoService.swift; sourceTree = "<group>"; };
 		8B948AEF2D573296000BE0FD /* DomainsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainsConstants.swift; sourceTree = "<group>"; };
 		8B948AF12D5732CE000BE0FD /* PhotoHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoHomeScreen.swift; sourceTree = "<group>"; };
 		8B948AF52D573560000BE0FD /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
@@ -133,7 +141,9 @@
 		543EF8E72CF4662600069F25 /* PhotoEaseTests */ = {
 			isa = PBXGroup;
 			children = (
-				543EF8E82CF4662600069F25 /* PhotoEaseTests.swift */,
+				8B43C4852D587A5900365326 /* PhotoHomeScreen */,
+				8B43C4842D587A5100365326 /* Services */,
+				8B43C4832D587A4700365326 /* Utils */,
 			);
 			path = PhotoEaseTests;
 			sourceTree = "<group>";
@@ -147,12 +157,54 @@
 			path = PhotoEaseUITests;
 			sourceTree = "<group>";
 		};
+		8B237E4C2D58889800E1B646 /* ViewModesl */ = {
+			isa = PBXGroup;
+			children = (
+				8B237E4D2D5888AE00E1B646 /* PhotoHomeViewModels_Tests.swift */,
+			);
+			path = ViewModesl;
+			sourceTree = "<group>";
+		};
 		8B43C47C2D57A6E900365326 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				8B43C47D2D57A70A00365326 /* PhotoAsyncImage.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		8B43C4832D587A4700365326 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8B43C4872D587AA700365326 /* NetworkManager_Tests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8B43C4842D587A5100365326 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8B870A4E2D5880AF00B2C5E5 /* MockPhotoService.swift */,
+				8B43C4812D5874CE00365326 /* PhotoService_Tests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8B43C4852D587A5900365326 /* PhotoHomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8B237E4C2D58889800E1B646 /* ViewModesl */,
+				8B43C4862D587A7E00365326 /* Models */,
+			);
+			path = PhotoHomeScreen;
+			sourceTree = "<group>";
+		};
+		8B43C4862D587A7E00365326 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B43C47F2D58737600365326 /* PhotoModel_Tests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		8B948AE42D5731F5000BE0FD /* Screens */ = {
@@ -378,7 +430,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				543EF8E92CF4662600069F25 /* PhotoEaseTests.swift in Sources */,
+				8B237E4E2D5888AE00E1B646 /* PhotoHomeViewModels_Tests.swift in Sources */,
+				8B43C4882D587AA700365326 /* NetworkManager_Tests.swift in Sources */,
+				8B43C4802D58738200365326 /* PhotoModel_Tests.swift in Sources */,
+				8B43C4822D5874DF00365326 /* PhotoService_Tests.swift in Sources */,
+				8B870A4F2D5880B400B2C5E5 /* MockPhotoService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

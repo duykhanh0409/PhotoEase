@@ -11,6 +11,7 @@ import Combine
 class PhotoViewModel: ObservableObject {
     
     @Published var photos: [PhotoModel] = []
+    @Published var errorMessage: String? = nil
     @Published var searchText: String = ""
     @Published var showFavoritesOnly = false
     @Published var filteredPhotos: [PhotoModel] = []
@@ -24,11 +25,11 @@ class PhotoViewModel: ObservableObject {
     }
     
     private func addSubscribers() {
-        photoService.$photos
-            .sink { [weak self] (returnedPhotos) in
+        photoService.$result
+            .sink { [weak self] (data) in
                 self?.isLoading = false
-                guard let photos = returnedPhotos else { return }
-                self?.photos = photos
+                self?.photos = data.photos ?? []
+                self?.errorMessage = data.error
                 self?.applyFilters()
             }
             .store(in: &cancellables)
@@ -60,7 +61,7 @@ class PhotoViewModel: ObservableObject {
     func isFavorite(_ photo: PhotoModel) -> Bool {
         return photos.first(where: { $0.id == photo.id })?.favorite ?? false
     }
-
+    
     func toggleFavoriteFilter() {
         if searchText.isEmpty {
             showFavoritesOnly.toggle()
@@ -68,7 +69,7 @@ class PhotoViewModel: ObservableObject {
         }
     }
     
-    private func applyFilters() {
+    func applyFilters() {
         filteredPhotos = photos.filter { photo in
             (!showFavoritesOnly || photo.favorite)
         }
