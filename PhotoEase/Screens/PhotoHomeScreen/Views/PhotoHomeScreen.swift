@@ -26,6 +26,7 @@ struct PhotoHomeScreen: View {
                     }
                     .navigationTitle("Photo List")
                     .listStyle(.plain)
+                    .accessibilityIdentifier("photoList")
                 }
             }
             .searchable(text: $viewModel.searchText, prompt: "Search Photos")
