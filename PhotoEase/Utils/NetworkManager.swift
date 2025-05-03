@@ -29,7 +29,6 @@ class NetworkingManager {
     
     // MARK: - New method: fetch with cache + live data
     static func fetchWithCache(from urlString: String, method: String = "GET") -> AnyPublisher<Data, Error> {
-        
         guard let url = URL(string: urlString) else {
             return Fail(error: NetworkingError.invalidURL).eraseToAnyPublisher()
         }

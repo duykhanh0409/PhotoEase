@@ -68,6 +68,7 @@
 		8B948AF92D5735EB000BE0FD /* PhotoDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailScreen.swift; sourceTree = "<group>"; };
 		8B948AFB2D5735FC000BE0FD /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		8B948AFD2D57360C000BE0FD /* PhotoHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoHomeViewModel.swift; sourceTree = "<group>"; };
+		8BC36FB72DC5D89800009C77 /* test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = test.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +222,7 @@
 			children = (
 				8B948AEF2D573296000BE0FD /* DomainsConstants.swift */,
 				8B948AF72D5735DB000BE0FD /* NetworkManager.swift */,
+				8BC36FB72DC5D89800009C77 /* test.playground */,
 			);
 			path = Utils;
 			sourceTree = "<group>";

@@ -25,6 +25,7 @@ class PhotoViewModel: ObservableObject {
     }
     
     private func addSubscribers() {
+        
         photoService.$result
             .sink { [weak self] (data) in
                 self?.isLoading = false
