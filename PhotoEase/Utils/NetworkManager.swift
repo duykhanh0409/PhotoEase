@@ -27,6 +27,45 @@ class NetworkingManager {
         }
     }
     
+    // MARK: - New method: fetch with cache + live data
+    static func fetchWithCache(from urlString: String, method: String = "GET") -> AnyPublisher<Data, Error> {
+        
+        guard let url = URL(string: urlString) else {
+            return Fail(error: NetworkingError.invalidURL).eraseToAnyPublisher()
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = method
+        request.cachePolicy = .returnCacheDataDontLoad // chỉ lấy từ cache nếu có
+        
+        // 1️⃣ Get cached data first
+        let cachedPublisher: AnyPublisher<Data, Error> = URLSession.shared.dataTaskPublisher(for: request)
+            .tryMap(\.data)
+            .catch { _ in Empty() } // không emit nếu không có cache
+            .eraseToAnyPublisher()
+
+        // 2️⃣ Then fetch live data
+        var liveRequest = URLRequest(url: url)
+        liveRequest.httpMethod = method
+        liveRequest.cachePolicy = .reloadIgnoringLocalCacheData // buộc gọi lại API
+
+        let freshPublisher: AnyPublisher<Data, Error> = URLSession.shared.dataTaskPublisher(for: liveRequest)
+            .tryMap { element -> Data in
+                guard let response = element.response as? HTTPURLResponse,
+                      200..<300 ~= response.statusCode else {
+                    throw NetworkingError.badResponse(statusCode: (element.response as? HTTPURLResponse)?.statusCode ?? -1)
+                }
+                return element.data
+            }
+            .eraseToAnyPublisher()
+
+        // 3️⃣ Merge: cache → live
+        return cachedPublisher
+            .append(freshPublisher)
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
+    }
+    
     static func fetchData(from urlString: String, method: String = "GET") -> AnyPublisher<Data, Error> {
         
         guard let url = URL(string: urlString) else {

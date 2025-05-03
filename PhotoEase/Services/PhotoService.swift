@@ -16,7 +16,7 @@ class PhotoService {
     private let fetchDataPublisher: () -> AnyPublisher<[PhotoModel], Error>
     
     init(fetchDataPublisher: @escaping () -> AnyPublisher<[PhotoModel], Error> = {
-        NetworkingManager.fetchData(from: Constants.photosURLString)
+        NetworkingManager.fetchWithCache(from: Constants.photosURLString)
             .decode(type: [PhotoModel].self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }) {
