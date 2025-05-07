@@ -24,6 +24,10 @@ class PhotoViewModel: ObservableObject {
         addSubscribers()
     }
     
+    deinit {
+        cancellables.removeAll()
+    }
+    
     private func addSubscribers() {
         
         photoService.$result

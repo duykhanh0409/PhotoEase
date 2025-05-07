@@ -45,29 +45,54 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 //processImage()
 
 
-protocol StudentDelegate: AnyObject {
-    func didFinishedHomeWork()
+//protocol StudentDelegate: AnyObject {
+//    func didFinishedHomeWork()
+//}
+//
+//class Student {
+//    weak var delegate: StudentDelegate?
+//    
+//    func doHomework() {
+//        print("Doing homework...")
+//        delegate?.didFinishedHomeWork()
+//    }
+//}
+//
+//
+//class Teacher: StudentDelegate {
+//    func didFinishedHomeWork() {
+//        print("you did good job")
+//    }
+//}
+//
+//var teacher = Teacher()
+//var student = Student()
+//
+//student.delegate = teacher
+//
+//student.doHomework()
+
+class Person {
+    var name: String
+    var pet: Pet?
+
+    init(name: String) { self.name = name }
+    deinit { print("\(name) bị giải phóng") }
 }
 
-class Student {
-    weak var delegate: StudentDelegate?
-    
-    func doHomework() {
-        print("Doing homework...")
-        delegate?.didFinishedHomeWork()
-    }
+class Pet {
+    var name: String
+    weak var owner: Person?  // 🔥 tránh retain cycle bằng weak
+
+    init(name: String) { self.name = name }
+    deinit { print("\(name) bị giải phóng") }
 }
 
+var john: Person? = Person(name: "John")
+var dog: Pet? = Pet(name: "Buddy")
 
-class Teacher: StudentDelegate {
-    func didFinishedHomeWork() {
-        print("you did good job")
-    }
-}
+john?.pet = dog
+dog?.owner = john // ✅ không giữ mạnh
 
-var teacher = Teacher()
-var student = Student()
-
-student.delegate = teacher
-
-student.doHomework()
+john = nil   // cả john và dog đều được deinit
+dog = nil
